@@ -1,0 +1,2028 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"
+  xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+  <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+  <meta name=ProgId content=Word.Document>
+  <meta name=Generator content="Microsoft Word 14">
+  <meta name=Originator content="Microsoft Word 14">
+  <link rel=File-List href="security-white-paper.files/filelist.xml">
+  <link rel="icon" href="../../../img/favicon.ico" type="image/x-icon">
+  <title></title>
+  <!--[if gte mso 9]><xml><o:DocumentProperties><o:Author>Apache POI</o:Author><o:LastAuthor>lijunhui</o:LastAuthor><o:Revision>1</o:Revision><o:Pages>10</o:Pages><o:Lines>1</o:Lines><o:Paragraphs>1</o:Paragraphs></o:DocumentProperties><o:CustomDocumentProperties><o:KSOProductBuildVer dt:dt="string" >1033-6.15.1.8935</o:KSOProductBuildVer><o:ICV dt:dt="string" >B3DF8CCE81D552558824C067C3E9D497_42</o:ICV></o:CustomDocumentProperties></xml><![endif]--><!--[if gte mso 9]><xml><o:OfficeDocumentSettings></o:OfficeDocumentSettings></xml><![endif]--><!--[if gte mso 9]><xml><w:WordDocument><w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel><w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery><w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery><w:DocumentKind>DocumentNotSpecified</w:DocumentKind><w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing><w:PunctuationKerning></w:PunctuationKerning><w:View>Web</w:View><w:Compatibility><w:DontGrowAutofit/><w:DoNotExpandShiftReturn/></w:Compatibility><w:Zoom>0</w:Zoom></w:WordDocument></xml><![endif]--><!--[if gte mso 9]><xml><w:LatentStyles DefLockedState="false"  DefUnhideWhenUsed="true"  DefSemiHidden="true"  DefQFormat="false"  DefPriority="99"  LatentStyleCount="260" >
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Normal" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Normal Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footnote text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="header" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footer" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="caption" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="table of figures" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="envelope address" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="envelope return" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footnote reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="line number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="page number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="endnote reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="endnote text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="table of authorities" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="macro" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toa heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Title" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Closing" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Signature" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  UnhideWhenUsed="false"  Name="Default Paragraph Font" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Message Header" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Subtitle" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Salutation" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Date" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text First Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text First Indent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Note Heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Block Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Hyperlink" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="FollowedHyperlink" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Strong" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Emphasis" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Document Map" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Plain Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="E-mail Signature" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Normal (Web)" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Acronym" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Address" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Cite" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Code" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Definition" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Keyboard" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Preformatted" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Sample" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Typewriter" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Variable" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  UnhideWhenUsed="false"  Name="Normal Table" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation subject" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="No List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="1 / a / i" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="1 / 1.1 / 1.1.1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Article / Section" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Simple 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Simple 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Simple 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Colorful 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Colorful 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Colorful 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table 3D effects 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table 3D effects 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table 3D effects 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Contemporary" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Elegant" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Professional" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Subtle 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Subtle 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Web 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Web 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Web 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Balloon Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Theme" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Placeholder Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="No Spacing" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Paragraph" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Quote" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Intense Quote" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 6" ></w:LsdException>
+</w:LatentStyles></xml><![endif]-->
+  <style>
+    @font-face {
+      font-family: "Times New Roman";
+    }
+
+    @font-face {
+      font-family: "宋体";
+    }
+
+    @font-face {
+      font-family: "Calibri";
+    }
+
+    @font-face {
+      font-family: "Wingdings";
+    }
+
+    @font-face {
+      font-family: "Arial";
+    }
+
+    @font-face {
+      font-family: "等线";
+    }
+
+    @list l0:level1 {
+      mso-level-start-at: 0;
+      mso-level-number-format: bullet;
+      mso-level-suffix: tab;
+      mso-level-text: "•";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l1:level1 {
+      mso-level-start-at: 5;
+      mso-level-number-format: decimal;
+      mso-level-suffix: tab;
+      mso-level-text: "%1.";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l2:level1 {
+      mso-level-number-format: decimal;
+      mso-level-suffix: tab;
+      mso-level-text: "%1.";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l3:level1 {
+      mso-level-start-at: 0;
+      mso-level-number-format: bullet;
+      mso-level-suffix: tab;
+      mso-level-text: "•";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l4:level1 {
+      mso-level-start-at: 0;
+      mso-level-number-format: bullet;
+      mso-level-suffix: tab;
+      mso-level-text: "•";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l5:level1 {
+      mso-level-start-at: 6;
+      mso-level-number-format: decimal;
+      mso-level-suffix: tab;
+      mso-level-text: "%1.";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l6:level1 {
+      mso-level-number-format: decimal;
+      mso-level-suffix: tab;
+      mso-level-text: "%1.";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l7:level1 {
+      mso-level-start-at: 4;
+      mso-level-number-format: decimal;
+      mso-level-suffix: tab;
+      mso-level-text: "%1.";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l8:level1 {
+      mso-level-start-at: 5;
+      mso-level-number-format: decimal;
+      mso-level-suffix: tab;
+      mso-level-text: "%1.";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l9:level1 {
+      mso-level-start-at: 2;
+      mso-level-number-format: decimal;
+      mso-level-suffix: tab;
+      mso-level-text: "%1.";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l10:level1 {
+      mso-level-start-at: 0;
+      mso-level-number-format: bullet;
+      mso-level-suffix: tab;
+      mso-level-text: "•";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l11:level1 {
+      mso-level-start-at: 7;
+      mso-level-number-format: decimal;
+      mso-level-suffix: tab;
+      mso-level-text: "%1.";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l12:level1 {
+      mso-level-start-at: 0;
+      mso-level-number-format: bullet;
+      mso-level-suffix: tab;
+      mso-level-text: "•";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l13:level1 {
+      mso-level-start-at: 4;
+      mso-level-number-format: decimal;
+      mso-level-suffix: tab;
+      mso-level-text: "%1.";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l14:level1 {
+      mso-level-start-at: 2;
+      mso-level-number-format: decimal;
+      mso-level-suffix: tab;
+      mso-level-text: "%1.";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l15:level1 {
+      mso-level-start-at: 0;
+      mso-level-number-format: bullet;
+      mso-level-suffix: tab;
+      mso-level-text: "•";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l16:level1 {
+      mso-level-start-at: 0;
+      mso-level-number-format: bullet;
+      mso-level-suffix: tab;
+      mso-level-text: "•";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l17:level1 {
+      mso-level-start-at: 3;
+      mso-level-number-format: decimal;
+      mso-level-suffix: tab;
+      mso-level-text: "%1.";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l18:level1 {
+      mso-level-number-format: decimal;
+      mso-level-suffix: tab;
+      mso-level-text: "%1.";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l19:level1 {
+      mso-level-start-at: 2;
+      mso-level-number-format: decimal;
+      mso-level-suffix: tab;
+      mso-level-text: "%1.";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l20:level1 {
+      mso-level-start-at: 3;
+      mso-level-number-format: decimal;
+      mso-level-suffix: tab;
+      mso-level-text: "%1.";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l21:level1 {
+      mso-level-start-at: 0;
+      mso-level-number-format: bullet;
+      mso-level-suffix: tab;
+      mso-level-text: "•";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    @list l22:level1 {
+      mso-level-start-at: 3;
+      mso-level-number-format: decimal;
+      mso-level-suffix: tab;
+      mso-level-text: "%1.";
+      mso-level-tab-stop: none;
+      mso-level-number-position: left;
+      margin-left: 0.0000pt;
+      text-indent: 0.0000pt;
+      font-family: 'Times New Roman';
+      color: rgb(51, 112, 255);
+    }
+
+    p.MsoNormal {
+      mso-style-name: Normal;
+      mso-style-parent: "";
+      margin: 0pt;
+      margin-bottom: .0001pt;
+      font-family: Calibri;
+      font-size: 10.5000pt;
+    }
+
+    span.10 {
+      font-family: Calibri;
+    }
+
+    span.msoIns {
+      mso-style-type: export-only;
+      mso-style-name: "";
+      text-decoration: underline;
+      text-underline: single;
+      color: blue;
+    }
+
+    span.msoDel {
+      mso-style-type: export-only;
+      mso-style-name: "";
+      text-decoration: line-through;
+      color: red;
+    }
+
+    table.MsoNormalTable {
+      mso-style-name: "Table Normal";
+      mso-style-parent: "";
+      mso-style-noshow: yes;
+      mso-tstyle-rowband-size: 0;
+      mso-tstyle-colband-size: 0;
+      mso-padding-alt: 0.0000pt 5.4000pt 0.0000pt 5.4000pt;
+      mso-para-margin: 0pt;
+      mso-para-margin-bottom: .0001pt;
+      mso-pagination: widow-orphan;
+      font-family: 'Times New Roman';
+      font-size: 10.0000pt;
+      mso-ansi-language: #0400;
+      mso-fareast-language: #0400;
+      mso-bidi-language: #0400;
+    }
+
+    @page {
+      mso-page-border-surround-header: no;
+      mso-page-border-surround-footer: no;
+    }
+
+    @page Section0 {
+      size: 595.2500pt 842.0000pt;
+      mso-header: url("security-white-paper.files/header.html") h0;
+      mso-footer: url("security-white-paper.files/header.html") f0;
+    }
+
+    div.Section0 {
+      page: Section0;
+    }
+  </style>
+</head>
+
+<body style="tab-interval:25pt;"><!--StartFragment-->
+  <div class="Section0" style="width: 1000px; margin: auto;">
+    <p class=MsoNormal style="margin-top:24.0000pt;margin-bottom:24.0000pt;margin-left:0.0000pt;
+line-height:120%;"><b style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:26.0000pt;">coScene Data Security White Paper</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><img width="388" height="116"
+        src="security-white-paper.files/security-white-paper34.png"><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p>&nbsp;</o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:19.0000pt;margin-bottom:7.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:1;line-height:120%;"><a name="heading_0"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:18.0000pt;">Introduction</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">We are well aware of the high importance you and your company place on data
+        security, which is the core consideration when designing our products, services, and features. At coScene, we
+        always prioritize data and privacy protection in our work.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p>&nbsp;</o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Our security architecture is built on a series of rigorous control measures. Our
+        cyber security and access control policies are carefully designed to strictly follow the principle of least
+        privilege, ensuring that only authorized users can access necessary resources. Our data transmission and storage
+        procedures use advanced encryption technology to ensure the security of data in static and transmission states.
+        By using temporary keys and customer master keys supported by hardware security modules (HSMs),
+        we further strengthen the protection of metadata and configuration data for data transmission and long-term
+        storage.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p>&nbsp;</o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">In addition, we have implemented monitoring and anomaly detection mechanisms
+        based on audit logs, which not only enable our team to identify and respond to potential security threats in
+        real time and proactively, but also provide your company with detailed historical records when conducting
+        critical activities such as threat and risk assessment and access audit.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p>&nbsp;</o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">We have forward-looking planning and deployment for the security and compliance
+        of our business. Our systems respect and comply with the laws and regulations where the data is located,
+        ensuring that business and sensitive data do not cross the geographical location of their physical storage media
+        without the affirmative consent of users.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p>&nbsp;</o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">As a leading data platform, we are committed to providing secure, transparent,
+        and data-driven decision support. This article aims to elaborate on a series of security measures taken by the
+        coScene platform, in order to demonstrate our commitment to the security and reliability of data
+        storage.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p>&nbsp;</o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:19.0000pt;margin-bottom:7.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:1;line-height:120%;"><a name="heading_1"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:18.0000pt;">Engraved security framework</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">From the beginning, the design of coScene was to provide a very high level of
+        security protection for its products and users. We make extensive use of established mature standards and
+        protocols in the industry to ensure our first-class product security and permission control.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><img width="828" height="628"
+        src="security-white-paper.files/security-white-paper2249.png"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(143,149,158);font-size:11.0000pt;"><br style='mso-special-character:line-break'></span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;"><a name="heading_2"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;">Data security during transmission (Data in
+          Transit)</span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">At coScene, data link security is the cornerstone of our core security features.
+        We are committed to ensuring the security and integrity of user data during transmission. We deeply understand
+        that every aspect of data transmission is crucial, whether it is the connection between users and coScene
+        services or the communication between internal services of coScene, we ensure its security and
+        reliability.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><b style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;">Encryption and Authentication: </span></b><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">We implement advanced encryption measures for every connection, using protocols
+        such as TLS 1.2, SSH-2, and IPSec to provide an impregnable security barrier for data transmission. These
+        protocols not only ensure the security of data during transmission, but also ensure the integrity of
+        data.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><b style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;">Digital Certificates: </span></b><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">With &nbsp;Level 2 CA Certificates &nbsp;issued by DigiCert , the world's
+        leading provider of enterprise digital certificates, we ensure that our connections are authenticated and
+        encrypted to international standards, providing our customers with the highest standards of
+        security.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><b style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;">Continuous evaluation: </span></b><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Our professional team regularly evaluates and reviews the connections used to
+        ensure that the encryption algorithms and key verification methods selected always comply with current best
+        security practices.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><b style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;">Security Monitoring and Response: </span></b><span
+        style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">We implement continuous security monitoring of critical tools we rely on, such
+        as OpenSSL. Once known vulnerabilities are discovered, we are able to respond quickly, deploy necessary security
+        patches, and ensure that our software and systems remain at the forefront of industry security
+        standards.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Through these comprehensive measures, coScene promises to provide users with a
+        secure and reliable data transmission environment. Our goal is to protect customer data from unauthorized access
+        and destruction, ensuring data security and business continuity.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;"><a name="heading_3"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;">Static -state data storage security (Data at
+          Rest)</span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;"><a name="heading_4"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;">User metadata and structured data</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">In the coScene platform, we give the highest priority to data protection work
+        generated by users during use. This includes but is not limited to sensitive data such as user configuration
+        details, transaction information, audit records, etc. For example, customized event fields, user events,
+        recorded raw information, and activity logs are strictly managed according to the needs of each organization. We
+        ensure that users can export and delete data completely according to their needs at any time, thus ensuring that
+        users have complete control over their own data.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;"><a name="heading_5"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;">User files and binary data</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">The coScene platform has implemented end-to-end encryption measures for all data
+        stored by users. This measure ensures that even in extreme cases, such as hackers bypassing access restrictions
+        and directly obtaining data on storage media, these data will become unreadable ciphertext due to encryption.
+        Without the corresponding key, these data cannot be utilized, and the key itself is strictly protected in the
+        memory of the data service.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;"><a name="heading_6"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;">Realize</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">The coScene platform performs static encryption processing on all stored data.
+        This means that the encryption process has been completed locally before the data is uploaded to the coScene
+        platform. All files uploaded to the platform are encrypted locally before being securely transmitted to the
+        object storage. This practice effectively prevents the risk of data leakage that may occur when data is
+        illegally accessed or destroyed in the object storage. For more information about coScene's static data
+        encryption process, please refer to our " </span><span><a href="/security/data-security-solution"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:11.0000pt;">
+            <font face="等线">coScene Data Security Solution</font>
+          </span></a></span><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">".</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;"><a name="heading_7"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;">Data storage location</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">coScene provides users with a complete Data Warehousing isolation solution and
+        data location selection to meet the needs of users and their enterprises in data compliance, review, and
+        localization. We not only provide current data storage options, but also plan future expansion plans to ensure
+        coverage of a wider range of geographic locations and compliance requirements. coScene's current and planned
+        data warehousing location options include but are not limited to the following regions:</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <table class=MsoNormalTable border=0 cellspacing=0 style="border-collapse:collapse;margin-left:-0.6000pt;mso-table-layout-alt:fixed;
+border:none;mso-border-left-alt:0.0000pt solid rgb(222,224,227);mso-border-top-alt:0.0000pt solid rgb(222,224,227);
+mso-border-right-alt:0.0000pt solid rgb(222,224,227);mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);mso-border-insideh:0.0000pt solid rgb(222,224,227);
+mso-border-insidev:0.0000pt solid rgb(222,224,227);mso-padding-alt:0.0000pt 0.5000pt 0.0000pt 0.5000pt ;">
+      <tr>
+        <td width=66 valign=top style="width:66.7500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:1.0000pt solid rgb(222,224,227);mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">Area</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=123 valign=top style="width:123.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:1.0000pt solid rgb(222,224,227);mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">Area</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=71 valign=top style="width:71.2500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:1.0000pt solid rgb(222,224,227);mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">Alibaba Cloud Ali Cloud Aliyun</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:1.0000pt solid rgb(222,224,227);mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">Azure</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:1.0000pt solid rgb(222,224,227);mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">AWS</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=66 valign=top style="width:66.7500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">Chinese mainland</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=123 valign=top style="width:123.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">Shanghai</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=71 valign=top style="width:71.2500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(183,237,177);mso-shading:rgb(183,237,177);">Has supported</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(186,206,253);mso-shading:rgb(186,206,253);">In the plan</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(255,246,122);mso-shading:rgb(255,246,122);">Not applicable</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=66 valign=top style="width:66.7500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p>&nbsp;</o:p>
+            </span></p>
+        </td>
+        <td width=123 valign=top style="width:123.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">Hangzhou</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=71 valign=top style="width:71.2500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(183,237,177);mso-shading:rgb(183,237,177);">Has supported</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(255,246,122);mso-shading:rgb(255,246,122);">Not applicable</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(255,246,122);mso-shading:rgb(255,246,122);">Not applicable</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=66 valign=top style="width:66.7500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p>&nbsp;</o:p>
+            </span></p>
+        </td>
+        <td width=123 valign=top style="width:123.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">Beijing</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=71 valign=top style="width:71.2500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(186,206,253);mso-shading:rgb(186,206,253);">In the plan</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(186,206,253);mso-shading:rgb(186,206,253);">In the plan</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(186,206,253);mso-shading:rgb(186,206,253);">In the plan</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=66 valign=top style="width:66.7500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p>&nbsp;</o:p>
+            </span></p>
+        </td>
+        <td width=123 valign=top style="width:123.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">Ningxia</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=71 valign=top style="width:71.2500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(255,246,122);mso-shading:rgb(255,246,122);">Not applicable</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(255,246,122);mso-shading:rgb(255,246,122);">Not applicable</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(186,206,253);mso-shading:rgb(186,206,253);">In the plan</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=66 valign=top style="width:66.7500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">North America</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=123 valign=top style="width:123.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">Virginia - East US</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=71 valign=top style="width:71.2500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(255,246,122);mso-shading:rgb(255,246,122);">Not applicable</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(183,237,177);mso-shading:rgb(183,237,177);">Has supported</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(186,206,253);mso-shading:rgb(186,206,253);">In the plan</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=66 valign=top style="width:66.7500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p>&nbsp;</o:p>
+            </span></p>
+        </td>
+        <td width=123 valign=top style="width:123.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">Oregon - West US</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=71 valign=top style="width:71.2500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(255,246,122);mso-shading:rgb(255,246,122);">Not applicable</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(183,237,177);mso-shading:rgb(183,237,177);">Has supported</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(186,206,253);mso-shading:rgb(186,206,253);">In the plan</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=66 valign=top style="width:66.7500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p>&nbsp;</o:p>
+            </span></p>
+        </td>
+        <td width=123 valign=top style="width:123.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">California - West US</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=71 valign=top style="width:71.2500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(255,246,122);mso-shading:rgb(255,246,122);">Not applicable</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(183,237,177);mso-shading:rgb(183,237,177);">Has supported</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(186,206,253);mso-shading:rgb(186,206,253);">In the plan</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=66 valign=top style="width:66.7500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">Europe</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=123 valign=top style="width:123.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">Netherlands</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=71 valign=top style="width:71.2500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(255,246,122);mso-shading:rgb(255,246,122);">Not applicable</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(186,206,253);mso-shading:rgb(186,206,253);">In the plan</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(186,206,253);mso-shading:rgb(186,206,253);">In the plan</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=66 valign=top style="width:66.7500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p>&nbsp;</o:p>
+            </span></p>
+        </td>
+        <td width=123 valign=top style="width:123.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;">Germany</span><span style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=71 valign=top style="width:71.2500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(255,246,122);mso-shading:rgb(255,246,122);">Not applicable</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(186,206,253);mso-shading:rgb(186,206,253);">In the plan</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+        <td width=75 valign=top style="width:75.0000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:1.0000pt solid rgb(222,224,227);
+mso-border-left-alt:0.0000pt solid rgb(222,224,227);border-right:1.0000pt solid rgb(222,224,227);mso-border-right-alt:0.0000pt solid rgb(222,224,227);
+border-top:none;mso-border-top-alt:0.0000pt solid rgb(222,224,227);border-bottom:1.0000pt solid rgb(222,224,227);
+mso-border-bottom-alt:0.0000pt solid rgb(222,224,227);">
+          <p class=MsoNormal align=center style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;"><span style="font-family:Arial;mso-fareast-font-family:等线;line-height:120%;
+font-size:11.0000pt;background:rgb(186,206,253);mso-shading:rgb(186,206,253);">In the plan</span><span
+              style="font-family:Calibri;font-size:10.5000pt;">
+              <o:p></o:p>
+            </span></p>
+        </td>
+      </tr>
+    </table>
+    <p class=MsoNormal style="margin-top:19.0000pt;margin-bottom:7.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:1;line-height:120%;"><a name="heading_8"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:18.0000pt;">coScene product safety</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;"><a name="heading_9"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;">Completely transparent logs and behavior
+          records</span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">coScene is committed to providing industry-leading regulatory standards and
+        transparency levels. We enable users to easily monitor and review system activities by providing a range of
+        user-friendly tools. These tools include but are not limited to:</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l4 level1 lfo1;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;"><span style='mso-list:Ignore;'>&#8226;<span>&nbsp;</span></span></span>
+      <![endif]><b style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;">Transaction-level log </span></b><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">: Record the details of each transaction to ensure the traceability of
+        transactions.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l3 level1 lfo2;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;"><span style='mso-list:Ignore;'>&#8226;<span>&nbsp;</span></span></span>
+      <![endif]><b style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;">User Behavior Tracking </span></b><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">: Monitor every step a user takes on the platform to increase
+        transparency.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l21 level1 lfo3;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;"><span style='mso-list:Ignore;'>&#8226;<span>&nbsp;</span></span></span>
+      <![endif]><b style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;">Event operation record </span></b><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">: Detailed record of the operation history of all events for easy problem
+        tracking and analysis.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l0 level1 lfo4;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;"><span style='mso-list:Ignore;'>&#8226;<span>&nbsp;</span></span></span>
+      <![endif]><b style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;">Data operation record </span></b><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">: Record every operation on the data to ensure the integrity and consistency of
+        the data.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">All of this information can be directly disclosed to user administrators through
+        the coScene platform, ensuring visibility and transparency of operations, thereby enhancing users' trust in the
+        platform.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p>&nbsp;</o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">For customers with higher k security requirements, coScene further provides
+        operation log services similar to cloud providers. This not only meets customers' high standards in compliance,
+        supervision and security assurance, but also demonstrates our deep understanding and commitment to customers'
+        security needs.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Through these advanced logging services, customers can gain deeper insights into
+        system activity to stay ahead in complex security environments.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;"><a name="heading_10"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;">Three-party and single sign-on</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">coScene platform currently supports login through two widely used third-party
+        services, DingTalk and Feishu , which not only brings convenience to users, but also ensures the security of the
+        login process. In addition, we also provide a one-time password login method based on email to meet the needs of
+        different users.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">We are committed to continuously expanding and enriching our login options. In
+        the future, we plan to integrate more third-party login vendors to provide more diverse login methods. At the
+        same time, we are also actively promoting the integration work that supports single sign-on (SSO) methods such
+        as SAML, and expect to meet with users in the near future.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">We encourage users to adopt single sign-on, which not only simplifies the login
+        process and improves User Experience, but also reduces the use of passwords and reduces security risks caused by
+        password leakage, thereby improving the security and reliability of the entire system.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;"><a name="heading_11"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;">Role-based access control</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">The coScene platform has built a powerful role-based access control system
+        (RBAC), which gives administrators precise control over internal personnel accessing specific resources at
+        multiple levels such as organization, warehouse, and project. This system design aims to meet the complex
+        requirements of data access management for enterprises of different scales and needs.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Our system provides a series of predefined standard role templates, allowing
+        users to quickly perform initial configuration, saving time and reducing configuration errors. These templates
+        cover common responsibilities and permission requirements, bringing users the convenience of Plug and Play
+        (plug-and-play).</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">More importantly, the RBAC system of coScene allows organizational
+        administrators to customize settings based on these standard templates. This means that users can fine-tune the
+        permissions of characters according to their specific needs, achieving more precise access control.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">In order to help users better utilize this system, our product documentation
+        includes detailed instructions and guidelines on role-based access control. By reading these materials, users
+        can gain a deeper understanding of how to configure and optimize their access control policies to ensure the
+        security and compliance of enterprise resources.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;"><a name="heading_12"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;">Active audit log active query</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><b style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;">Audit log anonymization and intelligent
+          monitoring</span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">coScene platform performs anonymization on users' audit logs to protect their
+        privacy and data security. At the same time, we use advanced pattern detection technology to conduct in-depth
+        analysis of logs to identify potential data risks and abnormal behaviors.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><b style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;">Real-time alarm and security response</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Once suspicious behavior such as a large number of non-allowlisted network
+        segments or downloads outside of commonly used network segments is detected, our system will immediately trigger
+        an alarm mechanism that matches the Cloud as a Service provider level and service level. This ensures that users
+        can receive notifications about potential security threats in the first place.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><b style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;">Internal security review</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">While notifying users, coScene's internal security review team will quickly
+        intervene to conduct a detailed review of suspicious behavior. Our expert team will use their professional
+        knowledge and technical means to ensure security from the program to the operational level, while maximizing the
+        risk of human error and external intrusion.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:19.0000pt;margin-bottom:7.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:1;line-height:120%;"><a name="heading_13"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:18.0000pt;">GDPR practices</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">coScene platform has taken comprehensive and strict measures to ensure data
+        security and privacy, which provide users with a secure and transparent data environment while complying with
+        the requirements of the General Data Protection Regulation (GDPR).</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;"><a name="heading_14"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;">What is customer data?</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Customer Data means any information, including Personal Data, copied,
+        transmitted, or generated by our customers and their end users through our services.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;"><a name="heading_15"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;">Ownership of customer data</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Customers are the owners and controllers of customer data, and coScene is the
+        data processor. During the customer's use of coScene services, the customer retains ownership and control of the
+        data in their account.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;"><a name="heading_16"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;">System and software specifications</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">At the system software level, coScene helps customers maintain control over
+        privacy and data security in various ways.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l6 level1 lfo5;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>1.<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Data Encryption: We encrypt all data links and storage to ensure that it is
+        fully protected, whether in transmission or storage. By using advanced encryption technology, we ensure that
+        data cannot be accessed without authorization at any time.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l14 level1 lfo6;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>2.<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Data Minimization: coScene strictly adheres to the principle of data
+        minimization, collecting and storing only necessary information and avoiding processing any personally
+        identifiable information ( PII ). This practice reduces the risk of data leakage while ensuring the efficiency
+        of our services.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l17 level1 lfo7;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>3.<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Access Control: We have implemented strict access control mechanisms to ensure
+        that only authorized users can access sensitive data in the system. This permission-based control system ensures
+        data security while also supporting compliance requirements.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l7 level1 lfo8;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>4.<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Data masking and pseudonymization: We implement different levels of masking or
+        pseudonymization on data displayed by different users and systems to protect sensitive data from unauthorized
+        access.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l1 level1 lfo9;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>5.<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Logging and monitoring: coScene provides a comprehensive logging and monitoring
+        system to track and record user operations and system events in real time, in order to conduct security audits
+        and timely discover potential security threats.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l5 level1 lfo10;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>6.<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Data erasability and portability: We support complete erasability and
+        portability of data, allowing users to delete all information they have in our systems or transfer data to other
+        service providers when needed.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l11 level1 lfo11;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>7.<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Privacy settings and display notifications: coScene provides clear privacy
+        settings and notifications, allowing users to fully understand how their data is collected, processed, and
+        protected. This transparency not only helps users use our services with confidence, but also enhances their
+        trust in us.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;"><a name="heading_17"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;">Human factor norm</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">In addition to careful consideration in system design, we have also established
+        a series of strict processes and systems aimed at minimizing the impact of individual factors on system
+        functions and decisions within the organization. The following are our main measures:</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l2 level1 lfo12;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>1.<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Privacy impact assessment before feature launch: Before any new feature goes
+        live, we conduct a detailed privacy impact assessment to identify and mitigate potential impacts on user
+        privacy. This assessment process involves XFN collaboration to ensure potential privacy risks are considered
+        from multiple perspectives and appropriate measures are taken to prevent data leakage and abuse.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l9 level1 lfo13;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>2.<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Data Retention Policy: coScene formulates and strictly implements data retention
+        and deletion policies in accordance with legal requirements and business needs. For example, for users who no
+        longer use the product, we have clear data retention policies to ensure that user data is deleted after a
+        certain period of time, thereby reducing the risks that long-term data storage may bring.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l22 level1 lfo14;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>3.<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Accident Response Plan: We have a comprehensive accident response mechanism to
+        deal with data breaches and other security incidents. This includes recovery and compensation from the initial
+        stage of the accident to the later stage. Our goal is to control losses as soon as possible, restore normal
+        operations, and provide necessary compensation and support to affected users according to the
+        situation.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l13 level1 lfo15;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>4.<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Third-party audits: coScene regularly invites external security experts and
+        audit teams to conduct third-party security audits. These independent assessments help us identify potential
+        security bugs and compliance risks, ensuring that our security measures and compliance are always in the best
+        state.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l8 level1 lfo16;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>5.<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Employee training: We provide regular data security and privacy protection
+        training to our employees to increase their awareness of the importance of data protection and ensure that they
+        understand the latest security practices and company policies. This training not only includes basic data
+        processing guidelines, but also covers how to identify and prevent potential security threats.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">coScene's efforts in GDPR compliance and data security demonstrate our boundless
+        passion for safeguarding customer data. By combining advanced system security measures (such as comprehensive
+        data encryption and strict access control) with meticulous organizational policies (including employee training,
+        privacy assessments, and third-party audits), we are committed to meeting or even exceeding GDPR standards at
+        all levels. The dual approach of system software and human resources management not only strengthens the
+        internal team's emphasis on data security, but also ensures the strong protection of our system. coScene's goal
+        is to provide users with a secure and reliable data environment, ensuring that every user's data receives the
+        most comprehensive and advanced protection, and becoming a practitioner of data security and privacy protection
+        in the industry.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:19.0000pt;margin-bottom:7.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:1;line-height:120%;"><a name="heading_18"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:18.0000pt;">Analysis of the possible impact of data
+          breaches</span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;"><a name="heading_19"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;">If the permissions of the data warehouse storing user
+          data are leaked, for example, in Hybrid Cloud mode, local data warehouse permissions are
+          leaked</span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l16 level1 lfo17;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>&#8226;<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">In the engraved line, all data stored in the data warehouse is strictly
+        encrypted and hashed, so even if the permissions of the data warehouse are leaked, it will not directly lead to
+        the readability of the data. The time required to brute force crack the AES256 encryption algorithm far exceeds
+        the time that the earth has existed, so the security of these encrypted data is extremely reliable (Note
+        1).</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;"><a name="heading_20"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;">If the data of the execution database is
+          engraved</span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l15 level1 lfo18;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>&#8226;<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">In terms of user information and privacy data, coScene relies on the leading
+        DingTalk and Feishu login systems in China, so we do not store any information that can be traced back to the
+        user's specific identity. Even if coScene servers are attacked, malicious intruders can only obtain
+        non-sensitive information, such as random User Identification, recorded metadata, event metadata, etc. They
+        cannot directly obtain sensitive data stored in the data warehouse from coScene servers.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;"><a name="heading_21"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;">If the intruder obtains both the execution database of
+          the engraved line and the data of the data warehouse at the same time</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l12 level1 lfo19;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>&#8226;<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">coScene uses the Cloud as a Service key management service selected by the user
+        (such as Alibaba Cloud Ali Cloud Aliyun's KMS) to encrypt data. Therefore, even if the data of the data
+        warehouse and coScene execution database are leaked, without the corresponding key, intruders still cannot
+        decrypt and view user data.</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;"><a name="heading_22"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;">The intruder also obtained the execution database of
+          the engraved line, the data of the data warehouse , and the key of the Cloud as a Service vendor
+          KMS</span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l10 level1 lfo20;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>&#8226;<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">In this extreme case, coScene relies on the key management service provided by
+        Cloud as a Service vendor to periodically (set to &nbsp;N days) update the keys. Therefore, in the case of a
+        complete leak, at most, only &nbsp;N &nbsp;days of data encrypted with this key will be exposed. coScene will
+        re-encrypt and store the affected data after the leak is repaired to ensure data security.</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:19.0000pt;margin-bottom:7.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:1;line-height:120%;"><a name="heading_23"></a><b
+        style="mso-bidi-font-weight:normal"><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:18.0000pt;">Quote</span></b><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span></p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l18 level1 lfo21;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>1.<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Brute force cracking AES256:
+        https://scrambox.com/article/brute-force-aes/</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l19 level1 lfo22;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>2.<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Alibaba Cloud Ali Cloud Aliyun KMS:
+        https://www.aliyun.com/product/kms</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+    <p class=MsoNormal style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l20 level1 lfo23;">
+      <![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;"><span style='mso-list:Ignore;'>3.<span>&nbsp;</span></span></span>
+      <![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;">Data Security Solution:
+        https://coscene0.feishu.cn/wiki/wikcnPkxIAkhoAADeB2Etp4ugre</span><span
+        style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;">
+        <o:p></o:p>
+      </span>
+    </p>
+  </div><!--EndFragment-->
+</body>
+
+</html>
